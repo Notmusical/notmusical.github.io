@@ -1,0 +1,177 @@
+
+/* COGS3 studyBuddy specific styles go here. */
+#title {
+  background-color: #ff8360;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-family: 'Kanit';
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+}
+
+h2{
+  color: white ;
+  font-family: 'Kanit';
+  font-size: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-weight: bold; 
+}
+
+h4{
+  color: black;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.5;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/*Navbar Section*/
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Poppins';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.navbar-link{
+  font-family: 'Kanit';
+  font-size: 1.2rem;
+}
+
+/*Download Buttons*/
+
+.download-button{
+  margin: 5% 4% 5% 0;
+}
+
+/*Title Image*/
+
+.title-image{
+  width: 60%;
+  transform: rotate(20deg);
+  z-index: -1;
+  position: absolute;
+}
+
+/*Features Section*/
+
+#features{
+  padding: 7% 15%;
+  background-color: #fff;
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%; 
+}
+
+.icon{
+  color: #E8E288;
+  font-size: 3rem;
+  margin-bottom: 1.75rem; 
+}
+
+.icon:hover{
+  color: #7DCE82;
+}
+
+/*Testemonials Section*/
+
+#testimonials{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #3CDBD3;
+}
+
+.carousel-item {
+  padding:7% 15%;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/*Press Section*/
+
+#press{
+  background-color: #3CDBD3;
+  text-align: center;
+}
+
+.press-logo{
+  width: 10%;
+  margin: 20px 20px 50px;
+}
+
+/*Pricing Section*/
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-header{
+  color: #000;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+/*Call to Action section*/
+
+#cta{
+  background-color: #00FFF5;
+  color: #ffffff;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-heading {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/*Footer*/
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+/*Media Query*/
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+

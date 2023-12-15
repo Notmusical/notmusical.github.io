@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- PUT link to bootstrap and css stylesheet-->
+    <script src="https://kit.fontawesome.com/52d62310ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!--My CSS File-->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Ezra Thornton Portfolio</title>
+  </head>
+
+  <body>
+    <!--NAVABAR-->
+    <!--three sections in navbar, resume, my work, and contact which would include a 'cover letter'-->
+    <section id="title">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Ezra Thornton Portfolio
+          <i class="icon-portfolio fa-regular fa-folder-open"></i>
+        </a>
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-icon"><span class="navbar-toggler-icon"></span><span></span><span></span></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-link" href=#about>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link" href=#resume>Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link" href=#works>My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link" href="#classes">Coursework</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-link" href=#contact>Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <!--section about computer art-->
+      <section id="about">
+        <h1>About Computer Art</h1>
+        <p>Computer Art, also referred to as new media art, is a form of interdisciplinary creation that can be found everywhere in our modern day. Anything involving images, sound, animation, video, robotics, video games, etc. that were made with electronic media can be classified as computer/new media art.  </p>
+      </section>
+      <!--section for resume-->
+      
+      <section id="resume">
+        <div class="resume container-fluid feature-box col-lg-12">
+          <a href="Ezra_Thornton_Resume.docx" class="icon-resume"><i class="fa-solid fa-file-contract fa-2xl"></i></a><h2>Click on the icon to download and view my resume.</h2>
+        </div>
+      </section>
+      
+    </section>
+    
+    
+    <!--LARGE SECTION for works-->
+    <section id="works">
+      <div><br></div>
+      <div class="works-header">
+        <h1>EXAMPLE WORKS</h1>
+        <h3>Click on the images to see the full webpages.</h3>
+      </div>
+    <!--work1 Animation for VIS 142-->
+    <!--need to add javascript buttons for play/pause -->
+      <div class="work-odd row">
+        <div class="video-div feature-box col-lg-5">
+          <video id="video">
+            <source src="images/animationVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="feature-box col-lg-7">
+          <h2>Golden Spiral Animation</h2>
+          <p>This was an animation I produced using python, and more specifically using pygame. In it we see an object that moves in a Golden Ratio spiral until it collides with the edge of the screen, then it changes shapes and color until it collides again. Each collision it changes to a different shape or image. The image is chosen randomly between 5 different photos.</p>
+          <button type="button" id="play_button" onclick="playPause()">Play/Pause Animation</button>
+          
+        </div>
+      </div>
+    <!--work2 JS Dice Website-->
+      <div class="work-even row">
+        <div class="feature-box col-lg-8">
+          <h2>Dice Website</h2>
+          <p>This is a website I designed for my Intro to Computing Course. In this work, the website takes in an input of how many rounds you would like to play. If the dice add up to a value greater than 9, then the user wins $5. If the dice add up to a value less than 5 then the computer wins $5. Whoever has the most money after the amount of rounds input wins the game. I achieved this using JavaScript functions to track the information throughout the game. </p> 
+        </div>
+        <div class="on-hover feature-box col-lg-4">
+          <img src="images/dice.png" alt="Dice Game Webpage">
+          <a href="Works/Lab6/Thornton Dice Lab/dice.html"><p class="hover-text">GO TO PAGE</p></a>
+        </div>
+      </div>
+    <!--work3 studyBuddy-->
+      <div class="work-odd row">
+        <div class="on-hover feature-box col-lg-4">
+          <img src="images/studyBuddy.png" alt="Study Buddy Webpage">
+          <a href="Works/Lab3/ThorntonLab3.html"><p class="hover-text">GO TO PAGE</p></a>
+        </div>
+        <div class="feature-box col-lg-8">
+          <h2>Study Buddy</h2>
+          <p>This website is advertising a fake studyBuddy app that is meant to connect students worldwide to form virtual or in person study groups. In this you can see examples of my use of a Bootstrap and other CSS to create a cohesive and aesthetically pleasing website to most effectively advertise to them. I did this by creating a cohesive and bright color palette and using moving/variable elements to keep the viewer engaged.</p>
+        </div>
+      </div>
+    <!--work4 Figma Prototype-->
+      <div class="work-even row">
+        <div class="feature-box col-lg-8">
+          <h2>FIGMA Health App</h2>
+          <p>Here we see the front page of a FIGMA designed health app. In the hypothetical app you can track your footsteps, your heart rate, as well as your nutrition. Here you can see my competency with FIGMA to produce a visually pleasing app through minimalistic design and cohesive color palettes. </p>
+        </div>
+        <div class="on-hover feature-box col-lg-4">
+          <img src="images/FIGMA.png" alt="FIGMA image">
+          <a href="https://www.figma.com/file/xTNy4Hv1FR9vWCSVE6gNdG/HEALTH-APP-Lab-5?type=design&node-id=0%3A1&mode=design&t=0jSu9kWQNXGohoti-1"><p class="hover-text">GO TO PAGE</p></a>
+        </div>
+      </div>
+      <div><br></div>
+    
+    <!--Relevant Coursework-->
+      <section id="classes" class="container my-5">
+        <div class="courseHeader">
+          <h1>RELEVANT COURSEWORK</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>CSE 8A</h5>
+                <p class="courses">Taught me how to create software in Python programming language</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>CSE 8B</h5>
+                <p class="courses">Learned how to create software in Java programming language</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>CSE 30</h5>
+                <p class="courses">Wrote software using C programming language</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>COGS 3</h5>
+                <p class="courses">Designed web pages and apps using FIGMA, JavaScript, HTML, and CSS. Also taught me to use EXCEL.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>VIS 142</h5>
+                <p class="courses">Analyzed history of computer art, looked at pieces involving robotics, web design, AI, VR, and video games.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5>VIS 10</h5>
+                <p class="courses">Lectures by visiting artists, critics, and scientists working with computer art. Real world applications of computer art.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div><br></div>
+    </section>
+  <!--section for contact-->
+    <section id="contact">
+      <div id="contactDiv">
+        <h1>CONTACT ME</h1>
+        <h2>Email: filleremail@ucsd.edu</h2>
+        <a href="https://www.instagram.com/instagram/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="footer fa-brands fa-instagram fa-2xl"></i></a>
+        <a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="footer fa-brands fa-x-twitter fa-2xl"></i></a>
+        <a href="https://www.tiktok.com/@tiktok?is_from_webapp=1&sender_device=pc"><i class="footer fa-brands fa-tiktok fa-2xl"></i></a>
+        <a href="https://discord.gg/discord-developers"><i class="footer fa-brands fa-discord fa-2xl"></i></a>
+      </div>
+    </section>
+    <script src="portfolio.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
